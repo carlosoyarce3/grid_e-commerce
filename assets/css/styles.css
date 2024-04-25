@@ -1,0 +1,34 @@
+body{
+    font-family: "Kalam", cursive;
+}
+
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+aside{
+    background-color: aqua;
+    grid-area: sidebar;
+}
+
+main{
+    background-color: aqua;
+    grid-area: main;
+}
+
+footer{
+    background-color: aqua;
+    grid-area: footer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header" "header" "header" "header"
+    "sidebar" "main" "main" "main"
+    "sidebar" "main" "main" "main"
+    "sidebar main main main"
+    "footer footer footer footer"
+    ;
+}
