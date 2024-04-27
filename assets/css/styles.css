@@ -77,7 +77,7 @@ body{
     "footer footer footer"
     ;
     grid-template-columns: 20% auto;
-    grid-template-rows: 10% auto 7%;
+    grid-template-rows: 15% auto 10%;
     height: 100vh;
 }
 .productos{
@@ -87,6 +87,60 @@ body{
     justify-content: space-around;
 }
 
+.card{
+    margin: 3%;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    border-style:dashed;
+}
+
+.card_text p{
+    margin: 0;
+}
+
+.shirt{
+    color: #282828;
+    padding-top: 10%;
+    font-size: 1.1em;
+    font-weight: 550;
+}
+
+.wrestler{
+    color: #5a5a5a;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.card_buy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_buy p{
+    font-size: medium;
+    font-weight: 500;
+}
+
+.card_buy button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(101, 116, 229);
+    font-weight: 600;
+    border: 0;
+    border-radius: 15%;
+}
+
+.card_buy button:hover{
+    background-color: #8b8b8b;
+}
+
+.card_buy button:focus{
+    background-color: #606060;
+}
+
 .card_img img{
-    width: 143px;
+    width: 90%;
 }
