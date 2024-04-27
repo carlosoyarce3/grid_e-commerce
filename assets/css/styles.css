@@ -1,5 +1,5 @@
 body{
-    font-family: "Kalam", cursive;
+    font-family: "Roboto", cursive;
     margin:0;
 }
 
@@ -8,11 +8,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
     font-size: 1.6em;
     font-weight: 700;
-    background: rgb(48,39,208);
-    background: linear-gradient(90deg, rgba(48,39,208,1) 0%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 73%, rgba(0,212,255,1) 100%);
+    background: rgb(68, 68, 74);
+    background: linear-gradient(90deg, rgb(88, 88, 88) 0%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 73%, rgb(196, 6, 6) 100%);
     color:#fff;
 }
 
@@ -21,33 +20,44 @@ body{
     background-color: lightgray;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 83vh;
+    align-items: start;
 }
 
 .menu{
+    padding-left: 9%;
     padding-top: 0.5em;
-    font-size: 1.5em;
+    padding-bottom: 4%;
+    font-size: 1.6em;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .categorias{
-    font-size: 1.2em;
+    padding-left: 6%;
+    font-size: .9em;
     display: flex;
     flex-direction: column;
 }
 
-.categorias p{
+.categorias a{
     margin: 0;
     padding-top: 0.5em;
     padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
 }
 
+.categorias a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.categorias a:focus{
+    color: rgb(0, 0, 0);
+}
 
 .item_main{
     grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .item_footer{
@@ -57,15 +67,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7vh;
 }
 
 .grid-container{
     display: grid;
     grid-template-areas:
-    "header header header header header header header header header"
-    "sidebar main main main main main main main main"
-    "footer footer footer footer footer footer footer footer footer"
+    "header header header"
+    "sidebar main main"
+    "footer footer footer"
     ;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 10% auto 7%;
     height: 100vh;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.card_img img{
+    width: 143px;
 }
